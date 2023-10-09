@@ -55,6 +55,7 @@ public class RadioTest {
 
 
     }
+
     @Test
     public void shouldSetZero() {
         Radio rad = new Radio();
@@ -93,7 +94,6 @@ public class RadioTest {
 
 
     }
-
 
 
     @Test
@@ -274,6 +274,7 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
     @Test
     public void shouldSetReduceSoundVolume() {
         Radio rad = new Radio();
@@ -316,8 +317,4 @@ public class RadioTest {
 
     }
 
-    @Test
-    public void test() {
-        Radio rad = new Radio( 10);
-    }
 }
