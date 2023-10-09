@@ -1,6 +1,7 @@
 public class Radio {
-    public int stationNumber;
-    public int soundVolume;
+    private int stationNumber;
+    private int soundVolume;
+
 
 
     public void next() {
@@ -57,20 +58,3 @@ public class Radio {
             soundVolume = 0;
         }
     }
-
-    public int getCurrentSoundVolume() {return soundVolume;}
-    public void setCurrentSoundVolume(int soundVolume) {
-
-        if (soundVolume > 100) {
-            return;
-        }
-        if (soundVolume < 0) {
-            return;
-        }
-        this.soundVolume = soundVolume;
-
-
-
-
-    }
-}
