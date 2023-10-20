@@ -317,4 +317,17 @@ public class RadioTest {
 
     }
 
+    @Test
+    public void testCount() {
+        Radio rad = new Radio();
+        rad.setCurrentStationNumber(10);
+
+        rad.setCurrentStationNumber(5);
+
+        int expected = 5;
+        int actual = rad.getCurrentStationNumber();
+
+        Assertions.assertEquals(expected, actual);
+
+    }
 }
